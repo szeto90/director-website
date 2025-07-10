@@ -1,0 +1,117 @@
+{
+  "site": {
+    "title": "Highway - Free CSS Template",
+    "logo": "High<em>way</em>",
+    "description": "Your customizable website description"
+  },
+  "hero": {
+    "title": "Welcome to <em>Highway</em>",
+    "subtitle": "FREE CSS TEMPLATE by templatemo",
+    "description": "Homepage with full-width image gallery",
+    "backgroundVideo": "highway-loop.mp4"
+  },
+  "portfolio": {
+    "items": [
+      {
+        "id": 1,
+        "title": "Biodiesel <em>squid</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_4.png",
+        "largeImage": "img/big_portfolio_item_4.png"
+      },
+      {
+        "id": 2,
+        "title": "raclette <em>taxidermy</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_2.png",
+        "largeImage": "img/big_portfolio_item_2.png"
+      },
+      {
+        "id": 3,
+        "title": "humblebrag <em>brunch</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_3.png",
+        "largeImage": "img/big_portfolio_item_3.png"
+      },
+      {
+        "id": 4,
+        "title": "Succulents <em>chambray</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_1.png",
+        "largeImage": "img/big_portfolio_item_1.png"
+      },
+      {
+        "id": 5,
+        "title": "freegan <em>aesthetic</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_5.png",
+        "largeImage": "img/big_portfolio_item_5.png"
+      },
+      {
+        "id": 6,
+        "title": "taiyaki <em>veg</em>",
+        "subtitle": "taiyaki",
+        "image": "img/portfolio_item_6.png",
+        "largeImage": "img/big_portfolio_item_6.png"
+      },
+      {
+        "id": 7,
+        "title": "Thundercats <em>santo</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_7.png",
+        "largeImage": "img/big_portfolio_item_7.png"
+      },
+      {
+        "id": 8,
+        "title": "wayfarers <em>yuccie</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_8.png",
+        "largeImage": "img/big_portfolio_item_8.png"
+      },
+      {
+        "id": 9,
+        "title": "disrupt <em>street</em>",
+        "subtitle": "Awesome Subtittle Goes Here",
+        "image": "img/portfolio_item_9.png",
+        "largeImage": "img/big_portfolio_item_9.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Say hello to <em>Highway</em>",
+    "formAction": "",
+    "formMethod": "post"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2018 Company Name | Designed by TemplateMo"
+  },
+  "navigation": {
+    "items": [
+      {
+        "name": "Home - Full-width",
+        "url": "index.html"
+      },
+      {
+        "name": "Home - Masonry",
+        "url": "masonry.html"
+      },
+      {
+        "name": "Home - Small-width",
+        "url": "grid.html"
+      },
+      {
+        "name": "About Us",
+        "url": "about.html"
+      },
+      {
+        "name": "Blog Entries",
+        "url": "blog.html"
+      },
+      {
+        "name": "Single Post",
+        "url": "single-post.html"
+      }
+    ],
+    "description": "We create awesome templates for you."
+  }
+}
