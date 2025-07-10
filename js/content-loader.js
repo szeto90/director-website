@@ -29,6 +29,17 @@ function updateContent() {
         metaDescription.content = siteContent.site.description;
     }
 
+    // Update Open Graph meta tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+        ogTitle.content = siteContent.site.title;
+    }
+
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+        ogDescription.content = siteContent.site.description;
+    }
+
     // Update logo
     const logo = document.querySelector('.logo a');
     if (logo) {
@@ -102,7 +113,7 @@ function updatePortfolio() {
                             </div>
                         </div>
                         <div class="image">
-                            <img src="${item.image}" alt="${item.title}">
+                            <img src="${item.image}" alt="${item.title.replace(/<[^>]*>/g, '')} - Professional video director work">
                         </div>
                     </div>
                 </a>

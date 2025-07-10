@@ -1,85 +1,85 @@
 {
   "site": {
-    "title": "Highway - Free CSS Template",
-    "logo": "High<em>way</em>",
-    "description": "Your customizable website description"
+    "title": "Professional Video Director | Creative Visual Storytelling",
+    "logo": "Video<em>Director</em>",
+    "description": "Award-winning video director specializing in commercials, music videos, and branded content. Professional cinematography and creative storytelling for your next project."
   },
   "hero": {
-    "title": "Welcome to <em>Highway</em>",
-    "subtitle": "FREE CSS TEMPLATE by templatemo",
-    "description": "Homepage with full-width image gallery",
+    "title": "Award-Winning <em>Video Director</em>",
+    "subtitle": "Creative Visual Storytelling & Cinematography",
+    "description": "Bringing your vision to life through film",
     "backgroundVideo": "highway-loop.mp4"
   },
   "portfolio": {
     "items": [
       {
         "id": 1,
-        "title": "Biodiesel <em>squid</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Commercial <em>Production</em>",
+        "subtitle": "Brand storytelling that connects",
         "image": "img/portfolio_item_4.png",
         "largeImage": "img/big_portfolio_item_4.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 2,
-        "title": "raclette <em>taxidermy</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Music <em>Videos</em>",
+        "subtitle": "Visual narratives that move audiences",
         "image": "img/portfolio_item_2.png",
         "largeImage": "img/big_portfolio_item_2.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 3,
-        "title": "humblebrag <em>brunch</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Documentary <em>Films</em>",
+        "subtitle": "Authentic stories, powerful impact",
         "image": "img/portfolio_item_3.png",
         "largeImage": "img/big_portfolio_item_3.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 4,
-        "title": "Succulentsobus <em>chambray</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Corporate <em>Videos</em>",
+        "subtitle": "Professional content that delivers",
         "image": "img/portfolio_item_1.png",
         "largeImage": "img/big_portfolio_item_1.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 5,
-        "title": "freegan <em>aesthetic</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Short <em>Films</em>",
+        "subtitle": "Creative narratives with heart",
         "image": "img/portfolio_item_5.png",
         "largeImage": "img/big_portfolio_item_5.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 6,
-        "title": "taiyaki <em>veg</em>",
-        "subtitle": "taiyaki",
+        "title": "Event <em>Coverage</em>",
+        "subtitle": "Capturing moments that matter",
         "image": "img/portfolio_item_6.png",
         "largeImage": "img/big_portfolio_item_6.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 7,
-        "title": "Thundercats <em>santo</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Branded <em>Content</em>",
+        "subtitle": "Authentic brand storytelling",
         "image": "img/portfolio_item_7.png",
         "largeImage": "img/big_portfolio_item_7.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 8,
-        "title": "wayfarers <em>yuccie</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Fashion <em>Films</em>",
+        "subtitle": "Style meets storytelling",
         "image": "img/portfolio_item_8.png",
         "largeImage": "img/big_portfolio_item_8.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 9,
-        "title": "disrupt <em>street</em>",
-        "subtitle": "Awesome Subtittle Goes Here",
+        "title": "Cinematic <em>Trailers</em>",
+        "subtitle": "Building anticipation through visuals",
         "image": "img/portfolio_item_9.png",
         "largeImage": "img/big_portfolio_item_9.png",
         "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -87,12 +87,12 @@
     ]
   },
   "contact": {
-    "title": "Say hello to <em>Highway</em>",
+    "title": "Let's Create Something <em>Amazing</em>",
     "formAction": "",
     "formMethod": "post"
   },
   "footer": {
-    "copyright": "Copyright &copy; 2018 Company Name | Designed by TemplateMo"
+    "copyright": "Copyright &copy; 2025 Professional Video Director | Creative Visual Storytelling"
   },
   "navigation": {
     "items": [
@@ -109,7 +109,7 @@
         "url": "grid.html"
       },
       {
-        "name": "About Us",
+        "name": "About Director",
         "url": "about.html"
       },
       {
@@ -121,6 +121,6 @@
         "url": "single-post.html"
       }
     ],
-    "description": "We create awesome templates for you."
+    "description": "Professional video production and creative storytelling services."
   }
 }
