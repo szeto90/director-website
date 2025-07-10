@@ -93,7 +93,7 @@ function updatePortfolio() {
         portfolioItem.className = 'col-md-4 col-sm-6';
         portfolioItem.innerHTML = `
             <div class="portfolio-item">
-                <a href="${item.largeImage}" data-lightbox="image-1">
+                <a href="#" class="video-link" data-youtube-url="${item.youtubeUrl}" data-title="${item.title}">
                     <div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
@@ -109,6 +109,16 @@ function updatePortfolio() {
             </div>
         `;
         portfolioContainer.appendChild(portfolioItem);
+    });
+
+    // Add click handlers for video links
+    document.querySelectorAll('.video-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const youtubeUrl = this.getAttribute('data-youtube-url');
+            const title = this.getAttribute('data-title');
+            openYouTubeModal(youtubeUrl, title);
+        });
     });
 }
 
@@ -127,6 +137,76 @@ function updateNavigation() {
     const navDescription = document.querySelector('.main-menu p');
     if (navDescription) {
         navDescription.textContent = siteContent.navigation.description;
+    }
+}
+
+// YouTube modal functions
+function getYouTubeVideoId(url) {
+    const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+}
+
+function openYouTubeModal(youtubeUrl, title) {
+    const videoId = getYouTubeVideoId(youtubeUrl);
+    if (!videoId) {
+        console.error('Invalid YouTube URL:', youtubeUrl);
+        return;
+    }
+
+    // Create modal if it doesn't exist
+    let modal = document.getElementById('youtube-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'youtube-modal';
+        modal.className = 'youtube-modal';
+        modal.innerHTML = `
+            <div class="youtube-modal-content">
+                <div class="youtube-modal-header">
+                    <h3 class="youtube-modal-title"></h3>
+                    <span class="youtube-modal-close">&times;</span>
+                </div>
+                <div class="youtube-modal-body">
+                    <div class="youtube-video-container">
+                        <iframe id="youtube-iframe" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Add close event listeners
+        modal.querySelector('.youtube-modal-close').addEventListener('click', closeYouTubeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeYouTubeModal();
+            }
+        });
+    }
+
+    // Update modal content
+    const modalTitle = modal.querySelector('.youtube-modal-title');
+    const iframe = modal.querySelector('#youtube-iframe');
+    
+    modalTitle.innerHTML = title;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    
+    // Show modal
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeYouTubeModal() {
+    const modal = document.getElementById('youtube-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        
+        // Stop video by removing src
+        const iframe = modal.querySelector('#youtube-iframe');
+        if (iframe) {
+            iframe.src = '';
+        }
     }
 }
 

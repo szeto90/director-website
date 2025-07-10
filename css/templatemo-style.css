@@ -20,6 +20,111 @@ body::-webkit-scrollbar-thumb {
     background: rgba(250, 250, 250, 0.5);
 }
 
+/* YouTube Modal Styles */
+.youtube-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.youtube-modal-content {
+    position: relative;
+    background-color: #222;
+    margin: 2% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.youtube-modal-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.youtube-modal-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.youtube-modal-close {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.youtube-modal-close:hover {
+    color: #ff6b6b;
+}
+
+.youtube-modal-body {
+    padding: 0;
+}
+
+.youtube-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive YouTube Modal */
+@media (max-width: 768px) {
+    .youtube-modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .youtube-modal-title {
+        font-size: 18px;
+    }
+    
+    .youtube-modal-header {
+        padding: 15px;
+    }
+}
+
 body, html {
   height: 100%;
   min-height: 100%;

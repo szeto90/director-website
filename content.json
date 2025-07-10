@@ -17,63 +17,72 @@
         "title": "Biodiesel <em>squid</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_4.png",
-        "largeImage": "img/big_portfolio_item_4.png"
+        "largeImage": "img/big_portfolio_item_4.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 2,
         "title": "raclette <em>taxidermy</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_2.png",
-        "largeImage": "img/big_portfolio_item_2.png"
+        "largeImage": "img/big_portfolio_item_2.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 3,
         "title": "humblebrag <em>brunch</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_3.png",
-        "largeImage": "img/big_portfolio_item_3.png"
+        "largeImage": "img/big_portfolio_item_3.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 4,
         "title": "Succulentsobus <em>chambray</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_1.png",
-        "largeImage": "img/big_portfolio_item_1.png"
+        "largeImage": "img/big_portfolio_item_1.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 5,
         "title": "freegan <em>aesthetic</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_5.png",
-        "largeImage": "img/big_portfolio_item_5.png"
+        "largeImage": "img/big_portfolio_item_5.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 6,
         "title": "taiyaki <em>veg</em>",
         "subtitle": "taiyaki",
         "image": "img/portfolio_item_6.png",
-        "largeImage": "img/big_portfolio_item_6.png"
+        "largeImage": "img/big_portfolio_item_6.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 7,
         "title": "Thundercats <em>santo</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_7.png",
-        "largeImage": "img/big_portfolio_item_7.png"
+        "largeImage": "img/big_portfolio_item_7.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 8,
         "title": "wayfarers <em>yuccie</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_8.png",
-        "largeImage": "img/big_portfolio_item_8.png"
+        "largeImage": "img/big_portfolio_item_8.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
         "id": 9,
         "title": "disrupt <em>street</em>",
         "subtitle": "Awesome Subtittle Goes Here",
         "image": "img/portfolio_item_9.png",
-        "largeImage": "img/big_portfolio_item_9.png"
+        "largeImage": "img/big_portfolio_item_9.png",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       }
     ]
   },
