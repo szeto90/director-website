@@ -4,7 +4,8 @@
       "WebFetch(domain:jpoststudio.my)",
       "Bash(mv:*)",
       "Bash(rm:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }

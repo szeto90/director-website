@@ -240,21 +240,25 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.notify-form .btn {
-    border: none;
-    padding: 0 25px;
-    background: #ff6b6b;
-    color: white;
+.notify-form .btn,
+.notify-form .btn-primary {
+    border: none !important;
+    padding: 0 25px !important;
+    background: #ff6b6b !important;
+    background-color: #ff6b6b !important;
+    color: white !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border-radius: 0 25px 25px 0 !important;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     white-space: nowrap;
+    box-shadow: none !important;
+    min-width: 120px;
 }
 
 .notify-form .btn:hover {
