@@ -210,9 +210,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .notify-form .input-group {
+    display: flex;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    height: 50px;
 }
 
 .notify-form .form-control {
@@ -221,12 +223,21 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.9);
     color: #333;
+    flex: 1;
+    border-radius: 0;
+    height: 100%;
 }
 
 .notify-form .form-control:focus {
     box-shadow: none;
     border: none;
     background: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.notify-form .input-group-btn {
+    display: flex;
+    align-items: stretch;
 }
 
 .notify-form .btn {
@@ -238,6 +249,10 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    border-radius: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .notify-form .btn:hover {
