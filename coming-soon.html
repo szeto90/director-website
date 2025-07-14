@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>Coming Soon | Professional Video Director</title>
+<!-- 
+
+Highway Template
+
+https://templatemo.com/tm-520-highway
+
+-->
+        <meta name="description" content="Something amazing is coming soon. Stay tuned for updates from our professional video director.">
+        <meta name="keywords" content="coming soon, video director, film director, cinematographer, music video director, commercial director">
+        <meta name="author" content="Professional Video Director">
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Coming Soon | Professional Video Director">
+        <meta property="og:description" content="Something amazing is coming soon. Stay tuned for updates from our professional video director.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourdomain.com/coming-soon.html">
+        <meta property="og:image" content="https://yourdomain.com/img/director-og-image.jpg">
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Coming Soon | Professional Video Director">
+        <meta name="twitter:description" content="Something amazing is coming soon. Stay tuned for updates.">
+        <meta name="twitter:image" content="https://yourdomain.com/img/director-twitter-image.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    <div class="coming-soon-overlay">
+        <video autoplay muted loop>
+            <source src="highway-loop.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="coming-soon-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="coming-soon-wrapper">
+                        <div class="coming-soon-inner">
+                            <h1>Coming Soon</h1>
+                            <p class="coming-soon-subtitle">Something extraordinary is in the works</p>
+                            
+                            <div class="coming-soon-timer">
+                                <div class="timer-item">
+                                    <span class="timer-number" id="days">00</span>
+                                    <span class="timer-label">Days</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-number" id="hours">00</span>
+                                    <span class="timer-label">Hours</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-number" id="minutes">00</span>
+                                    <span class="timer-label">Minutes</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-number" id="seconds">00</span>
+                                    <span class="timer-label">Seconds</span>
+                                </div>
+                            </div>
+
+                            <div class="coming-soon-description">
+                                <p>We're putting the finishing touches on our new website. Get ready for an immersive experience showcasing cinematic storytelling and creative vision like never before.</p>
+                            </div>
+
+                            <div class="notify-section">
+                                <h3>Get Notified</h3>
+                                <form class="notify-form">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Enter your email address" required>
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Notify Me</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-vimeo"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            // Set launch date (30 days from now - adjust as needed)
+            const launchDate = new Date();
+            launchDate.setDate(launchDate.getDate() + 30);
+            
+            const now = new Date().getTime();
+            const distance = launchDate.getTime() - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+            document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+            
+            if (distance < 0) {
+                document.querySelector('.coming-soon-timer').innerHTML = "LAUNCHED!";
+            }
+        }
+        
+        // Update countdown every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Email notification form
+        document.querySelector('.notify-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert('Thank you! We\'ll notify you at ' + email + ' when we launch.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
