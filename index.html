@@ -84,11 +84,9 @@ https://templatemo.com/tm-520-highway
                             <div class="notify-section">
                                 <h3>Get Notified</h3>
                                 <form class="notify-form">
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="Enter your email address" required>
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-primary" type="submit">Notify Me</button>
-                                        </span>
+                                    <div class="notify-input-wrapper">
+                                        <input type="email" class="notify-email-input" placeholder="Enter your email address" required>
+                                        <button class="notify-btn" type="submit">Notify Me</button>
                                     </div>
                                 </form>
                             </div>
@@ -117,9 +115,8 @@ https://templatemo.com/tm-520-highway
     <script>
         // Countdown Timer
         function updateCountdown() {
-            // Set launch date (30 days from now - adjust as needed)
-            const launchDate = new Date();
-            launchDate.setDate(launchDate.getDate() + 30);
+            // Set launch date to July 25, 2025
+            const launchDate = new Date('2025-07-25T00:00:00');
             
             const now = new Date().getTime();
             const distance = launchDate.getTime() - now;

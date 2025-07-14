@@ -5,7 +5,12 @@
       "Bash(mv:*)",
       "Bash(rm:*)",
       "Bash(ls:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(pkill:*)",
+      "Bash(grep:*)",
+      "Bash(true)",
+      "WebFetch(domain:localhost)"
     ],
     "deny": []
   }

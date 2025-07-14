@@ -209,59 +209,55 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
 }
 
-.notify-form .input-group {
+.notify-input-wrapper {
     display: flex;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     height: 50px;
+    align-items: stretch;
 }
 
-.notify-form .form-control {
+.notify-email-input {
     border: none;
     padding: 15px 20px;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.9);
     color: #333;
     flex: 1;
-    border-radius: 25px 0 0 25px !important;
+    border-radius: 25px 0 0 25px;
     height: 50px;
     line-height: 20px;
+    outline: none;
+    margin: 0;
 }
 
-.notify-form .form-control:focus {
-    box-shadow: none;
-    border: none;
+.notify-email-input:focus {
     background: rgba(255, 255, 255, 1);
     outline: none;
 }
 
-.notify-form .input-group-btn {
-    display: flex;
-}
-
-.notify-form .btn,
-.notify-form .btn-primary {
-    border: none !important;
-    padding: 0 25px !important;
-    background: #ff6b6b !important;
-    background-color: #ff6b6b !important;
-    color: white !important;
+.notify-btn {
+    border: none;
+    padding: 0 25px;
+    background: #ff6b6b;
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    border-radius: 0 25px 25px 0 !important;
-    height: 50px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    border-radius: 0 25px 25px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
-    box-shadow: none !important;
     min-width: 120px;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.notify-form .btn:hover {
+.notify-btn:hover {
     background: #ff5252;
     transform: translateY(-1px);
 }
