@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:jpoststudio.my)"
+      "WebFetch(domain:jpoststudio.my)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
